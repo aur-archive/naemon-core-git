@@ -1,0 +1,34 @@
+pkgbase = naemon-core-git
+	pkgdesc = System and network monitoring application
+	pkgver = 0.8.0.r149.g0028d6c
+	pkgrel = 2
+	url = http://naemon.org
+	install = naemon-core.install
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = gperf
+	makedepends = git
+	depends = bash
+	optdepends = logrotate
+	optdepends = thruk: Webinterface
+	optdepends = monitoring-plugins
+	source = git://github.com/naemon/naemon-core.git
+	source = naemon.service
+	backup = etc/logrotate.d/naemon
+	backup = etc/naemon/conf.d/commands.cfg
+	backup = etc/naemon/conf.d/contacts.cfg
+	backup = etc/naemon/conf.d/localhost.cfg
+	backup = etc/naemon/conf.d/printer.cfg
+	backup = etc/naemon/conf.d/switch.cfg
+	backup = etc/naemon/conf.d/templates/contacts.cfg
+	backup = etc/naemon/conf.d/templates/hosts.cfg
+	backup = etc/naemon/conf.d/templates/services.cfg
+	backup = etc/naemon/conf.d/timeperiods.cfg
+	backup = etc/naemon/conf.d/windows.cfg
+	backup = etc/naemon/init.d/naemon
+	backup = etc/naemon/naemon.cfg
+	backup = etc/naemon/resource.cfg
+
+pkgname = naemon-core-git
+
